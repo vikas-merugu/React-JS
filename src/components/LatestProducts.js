@@ -32,7 +32,8 @@ let resultArray = latestProducts.map((item, index) => (
             <br></br>
             <span className="prdName">{item.productName}</span>
             <br></br>
-            <span className="prdPrice"> ₹ {item.unitPrice.toFixed(2)}</span>
+            <span className="prdPrice"> ₹ {typeof item.unitPrice === 'number' ? item.unitPrice.toFixed(2) : ""}</span>
+
             <br></br>
             <Link to={"/ProductDetails/" + item.id}>
                 <button className="btn btn-outline-info" style={{ fontSize: '12px', padding: '5px 10px' }}>

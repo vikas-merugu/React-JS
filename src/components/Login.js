@@ -11,7 +11,7 @@ function Login()
 
     function loginClick()
     {
-           if(uname == "admin" && password == "admin123") 
+           if(uname == "akshitha" && password == "abcd") 
            {
                 // setResult("Welcome to Admin");
                 sessionStorage.setItem("USER_ID", uname);
